@@ -1,0 +1,21 @@
+<div ng-include="'tpl/credits.html'"></div>
+<table class="bordered centered">
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Debussy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="(date, shows) in showsByDate">
+      <td>{{date | dateToISO | date:'EEE'}}</td>
+      <td>
+        <div ng-style="{width: widthDebussy}" class="box-container">
+          <div ng-repeat="show in shows.Debussy">
+            <div ng-include="'tpl/box.html'"></div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

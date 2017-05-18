@@ -1,0 +1,356 @@
+{
+  "movies": [{
+    "title": "Agassi",
+    "director": "Chan-Wook Park",
+    "runningTime": "02:25",
+    "show": [{
+        "date": "2016-05-14",
+        "time": "08:30",
+        "location": "Debussy",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-14",
+        "time": "08:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-14",
+        "time": "22:00",
+        "location": "Lumière",
+        "demand": ""
+      }
+    ]
+  }, {
+    "title": "The BFG",
+    "director": "Steven Spielberg",
+    "runningTime": "01:55",
+    "show": [{
+        "date": "2016-05-14",
+        "time": "11:45",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-14",
+        "time": "19:00",
+        "location": "Lumière",
+        "demand": "high demand"
+      }
+    ]
+  }, {
+    "title": "Mal de pierres",
+    "director": "Nicole Garcia",
+    "runningTime": "02:00",
+    "show": [{
+        "date": "2016-05-15",
+        "time": "08:30",
+        "location": "Debussy",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-15",
+        "time": "08:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-15",
+        "time": "11:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-15",
+        "time": "19:30",
+        "location": "Lumière",
+        "demand": "high demand"
+      }
+    ]
+  }, {
+    "title": "American Honey",
+    "director": "Andrea Arnold",
+    "runningTime": "02:42",
+    "show": [{
+        "date": "2016-05-15",
+        "time": "15:30",
+        "location": "Lumière",
+        "demand": "high demand"
+      }
+    ]
+  }, {
+    "title": "The nice guys",
+    "director": "Shane Black",
+    "runningTime": "01:56",
+    "show": [{
+        "date": "2016-05-15",
+        "time": "22:30",
+        "location": "Lumière",
+        "demand": ""
+      }
+    ]
+  }, {
+    "title": "Loving",
+    "director": "Jeff Nichols",
+    "runningTime": "02:03",
+    "show": [{
+        "date": "2016-05-16",
+        "time": "08:30",
+        "location": "Debussy",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-16",
+        "time": "08:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-16",
+        "time": "11:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-16",
+        "time": "19:00",
+        "location": "Lumière",
+        "demand": "high demand"
+      }
+    ]
+  }, {
+    "title": "Paterson",
+    "director": "Jim Jarmush",
+    "runningTime": "01:53",
+    "show": [{
+        "date": "2016-05-16",
+        "time": "16:00",
+        "location": "Lumière",
+        "demand": "high demand"
+      }
+    ]
+  }, {
+    "title": "Hands of stone",
+    "director": "Jonathan Jakubowicz",
+    "runningTime": "01:56",
+    "show": [{
+        "date": "2016-05-16",
+        "time": "22:00",
+        "location": "Lumière",
+        "demand": ""
+      }
+    ]
+  }, {
+    "title": "Julieta",
+    "director": "Pedro Almodóvar",
+    "runningTime": "01:36",
+    "show": [{
+        "date": "2016-05-17",
+        "time": "08:30",
+        "location": "Debussy",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-17",
+        "time": "08:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-17",
+        "time": "13:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-17",
+        "time": "19:30",
+        "location": "Lumière",
+        "demand": "high demand"
+      }
+    ]
+  }, {
+    "title": "Personal Assistant",
+    "director": "Olivier Assayas",
+    "runningTime": "01:45",
+    "show": [{
+        "date": "2016-05-17",
+        "time": "11:00",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-17",
+        "time": "22:00",
+        "location": "Lumière",
+        "demand": ""
+      }
+    ]
+  }, {
+    "title": "Aquarius",
+    "director": "Kleben Mendonça Filho",
+    "runningTime": "02:20",
+    "show": [{
+        "date": "2016-05-17",
+        "time": "16:00",
+        "location": "Lumière",
+        "demand": ""
+      }
+    ]
+  }, {
+    "title": "La fille inconnue",
+    "director": "Jean-Pierre et Luc Dardenne",
+    "runningTime": "01:53",
+    "show": [{
+        "date": "2016-05-18",
+        "time": "08:30",
+        "location": "Debussy",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-18",
+        "time": "08:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-18",
+        "time": "19:00",
+        "location": "Lumière",
+        "demand": "high demand"
+      }
+    ]
+  }, {
+    "title": "Goksung",
+    "director": "Hong Jin Na",
+    "runningTime": "02:36",
+    "show": [{
+        "date": "2016-05-18",
+        "time": "11:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-18",
+        "time": "22:00",
+        "location": "Lumière",
+        "demand": ""
+      }
+    ]
+  }, {
+    "title": "Ma' Rosa",
+    "director": "Brillante Mendoza",
+    "runningTime": "01:50",
+    "show": [{
+        "date": "2016-05-18",
+        "time": "16:00",
+        "location": "Lumière",
+        "demand": ""
+      }
+    ]
+  }, {
+    "title": "Bacalauréat",
+    "director": "Cristian Mungiu",
+    "runningTime": "02:07",
+    "show": [{
+        "date": "2016-05-19",
+        "time": "08:30",
+        "location": "Debussy",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-19",
+        "time": "08:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-19",
+        "time": "14:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-19",
+        "time": "18:30",
+        "location": "Lumière",
+        "demand": "high demand"
+      }
+    ]
+  }, {
+    "title": "Juste la fin du monde",
+    "director": "Xavier Dolan",
+    "runningTime": "01:35",
+    "show": [{
+        "date": "2016-05-19",
+        "time": "11:00",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-19",
+        "time": "22:00",
+        "location": "Lumière",
+        "demand": "high demand"
+      }
+    ]
+  }, {
+    "title": "Gimme danger",
+    "director": "Jim Jarmush",
+    "runningTime": "01:48",
+    "show": [{
+        "date": "2016-05-19",
+        "time": "23:59",
+        "location": "Lumière",
+        "demand": ""
+      }
+    ]
+  }, {
+    "title": "The last face",
+    "director": "Sean Penn",
+    "runningTime": "02:11",
+    "show": [{
+        "date": "2016-05-20",
+        "time": "08:30",
+        "location": "Debussy",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-20",
+        "time": "08:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-20",
+        "time": "15:30",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-20",
+        "time": "19:00",
+        "location": "Lumière",
+        "demand": "high demand"
+      }
+    ]
+  }, {
+    "title": "The neon demon",
+    "director": "Nicolas Winding Refn",
+    "runningTime": "01:57",
+    "show": [{
+        "date": "2016-05-20",
+        "time": "12:00",
+        "location": "Lumière",
+        "demand": ""
+      },
+      {
+        "date": "2016-05-20",
+        "time": "22:30",
+        "location": "Lumière",
+        "demand": "high demand"
+      }
+    ]
+  }]
+}

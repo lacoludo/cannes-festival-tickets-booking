@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ticketsBooking" ng-init="title='Tickets booking : timeline view'">
+
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <meta name="description" content="The all new tickets booking system">
+  <meta name="keywords" content="tickets,booking,system,reservation,show,festival,cannes">
+  <meta name="author" content="LACOUTURE Ludovic">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#d0a42e">
+
+  <!-- Title -->
+  <title>{{title}}</title>
+
+  <!-- Material icons-->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="assets/bower_components/materialize/dist/css/materialize.min.css">
+  <!-- SweetAlert CSS -->
+  <link rel="stylesheet" href="assets/bower_components/sweetalert/dist/sweetalert.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- jQuery -->
+  <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- Angular -->
+  <script src="assets/bower_components/angular/angular.min.js"></script>
+  <!-- Angular Route -->
+  <script src="assets/bower_components/angular-route/angular-route.min.js"></script>
+  <script>
+    angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+  </script>
+
+  <!-- Materialize JS -->
+  <script src="assets/bower_components/materialize/dist/js/materialize.min.js"></script>
+  <!-- SweetAlert JS -->
+  <script src="assets/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+
+  <!-- App -->
+  <script src="assets/js/app.js"></script>
+
+</head>
+
+<body ng-controller="timelineController">
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="debussy-lumiere" class="brand-logo waves-effect waves-light">
+        <img src="assets/img/festival-de-cannes-logo.png" class="left logo" alt="logo">
+        <span class="hide-on-small-only hide-on-med-only">{{title}}</span>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li class="waves-effect waves-light">
+          <a href="debussy">Debussy</a>
+        </li>
+        <li class="waves-effect waves-light">
+          <a href="lumiere">Lumière</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div ng-view class="view"></div>
+
+</body>
+
+</html>
