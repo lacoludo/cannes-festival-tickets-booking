@@ -8,7 +8,5 @@
   <span>{{show.time}}</span>
   <i ng-if="!show.isBooked && !show.isLocked" class="grey-text booked-size">book it</i>
   <span ng-if="show.isBooked" class="booked-size">booked</span>
-  <!-- Text too long -->
-  <!-- <i ng-if="show.isLocked" class="reservation">booked for another same movie</i> -->
   <span ng-show="show.demand === 'high demand'" class="btn btn-floating pulse tooltipped high-demand" data-position="top" data-delay="50" data-tooltip="{{show.demand}}"></span>
 </div>

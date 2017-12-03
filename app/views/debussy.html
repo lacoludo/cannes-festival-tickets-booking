@@ -1,10 +1,9 @@
-<div ng-include="'tpl/credits.html'"></div>
+<div ng-include="'app/views/partials/credits.html'"></div>
 <table class="bordered centered">
   <thead>
     <tr>
       <th>Day</th>
       <th>Debussy</th>
-      <th>Lumière</th>
     </tr>
   </thead>
   <tbody>
@@ -13,14 +12,7 @@
       <td>
         <div ng-style="{width: widthDebussy}" class="box-container">
           <div ng-repeat="show in shows.Debussy">
-            <div ng-include="'tpl/box.html'"></div>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div ng-style="{width: widthLumiere}" class="box-container">
-          <div ng-repeat="show in shows.Lumiere">
-            <div ng-include="'tpl/box.html'"></div>
+            <div ng-include="'app/views/partials/box.html'"></div>
           </div>
         </div>
       </td>

@@ -1,45 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="ticketsBooking" ng-init="title='Tickets booking : timeline view'">
+<html lang="en" ng-app="ticketsBooking">
 
 <head>
-  <!-- Metadata -->
   <meta charset="utf-8">
-  <meta name="description" content="The all new tickets booking system">
-  <meta name="keywords" content="tickets,booking,system,reservation,show,festival,cannes">
-  <meta name="author" content="LACOUTURE Ludovic">
+  <title>Cannes Festival : tickets booking</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- Title -->
-  <title>{{title}}</title>
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/img/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#d0a42e">
-  <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#d0a42e">
-
-  <!-- CSS library -->
-  <!-- Material icons-->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-  <!-- Materialize CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" integrity="sha256-xbQIJkhfOw0Dry1H9lawvXRi9XcqdE8jDBZx1Op/mz8=" crossorigin="anonymous" />
-  <!-- SweetAlert CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" integrity="sha256-iXUYfkbVl5itd4bAkFH5mjMEN5ld9t3OHvXX3IU8UxU=" crossorigin="anonymous" />
-
-  <!-- CSS personal -->
-  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="node_modules/sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" href="app/css/app.min.css">
 </head>
 
 <body ng-controller="timelineController">
@@ -47,8 +16,8 @@
   <nav>
     <div class="nav-wrapper">
       <a href="debussy-lumiere" class="brand-logo waves-effect waves-light">
-        <img src="assets/img/festival-de-cannes-logo.png" class="left logo" alt="logo">
-        <span class="hide-on-small-only hide-on-med-only">{{title}}</span>
+        <img src="app/img/festival-de-cannes-logo.png" class="left logo" alt="logo">
+        <span class="hide-on-small-only hide-on-med-only">tickets booking</span>
       </a>
       <ul class="right hide-on-med-and-down">
         <li class="waves-effect waves-light">
@@ -63,23 +32,15 @@
 
   <div ng-view class="view"></div>
 
-  <!-- JS plugins -->
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <!-- Angular -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js" integrity="sha256-jFCqhWdzGFjoG8/SAncY2afI/Xv1TPSWSZrb9dpXQbk=" crossorigin="anonymous"></script>
-  <!-- Angular Route -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-route.min.js" integrity="sha256-gwbqUXJerjRkjhX++pIRavrW+/ZCA5R6jZS27+h111k=" crossorigin="anonymous"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-route/angular-route.min.js"></script>
   <script>
     angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
   </script>
-  <!-- Materialize JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js" integrity="sha256-lVmbGVbzHBkNHCUK0y+z2AyJei/v7jSNYppXTcq2FtU=" crossorigin="anonymous"></script>
-  <!-- SweetAlert JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js" integrity="sha256-egVvxkq6UBCQyKzRBrDHu8miZ5FOaVrjSqQqauKglKc=" crossorigin="anonymous"></script>
-
-  <!-- JS personal -->
-  <script src="assets/js/app.js"></script>
+  <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="app/js/app.js"></script>
 
 </body>
 

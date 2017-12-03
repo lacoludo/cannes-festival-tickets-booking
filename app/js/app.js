@@ -11,15 +11,15 @@ app.config(function($routeProvider, $locationProvider) {
 
   $routeProvider
     .when("/debussy-lumiere", {
-      templateUrl: "tpl/debussy-lumiere.html",
+      templateUrl: "app/views/debussy-lumiere.html",
       controller: "timelineController"
     })
     .when("/debussy", {
-      templateUrl: "tpl/debussy.html",
+      templateUrl: "app/views/debussy.html",
       controller: "timelineController"
     })
     .when("/lumiere", {
-      templateUrl: "tpl/lumiere.html",
+      templateUrl: "app/views/lumiere.html",
       controller: "timelineController"
     })
     .otherwise("/debussy-lumiere", {
@@ -64,9 +64,6 @@ app.controller("timelineController", ["$scope", "$http", function($scope, $http,
   };
 
   $scope.toggleBooking = function(show) {
-    // if (show.isLocked) {
-    //   return;
-    // };
     const user = $scope.user;
     const showCredits = show.demand === "high demand" ? 2 : 1;
     if (show.isBooked) {
@@ -124,17 +121,10 @@ app.controller("timelineController", ["$scope", "$http", function($scope, $http,
 
   $scope.moviesDB = {};
   $http
-    .get("assets/js/api/movies.json")
+    .get("server/movies.json")
     .then(function(response) {
       $scope.moviesDB = response.data;
       const baseOffset = getMinutesCount("08:30");
-      // [
-      //  date: "2016-05-14",
-      //   shows: {
-      //    Debussy: [],
-      //    Lumiere: []
-      //   }
-      // ]
       const showsByDate = {};
       let maxEndTimeDebussy = 0;
       let maxEndTimeLumiere = 0;
